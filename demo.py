@@ -19,5 +19,12 @@ html_1 = res.text
 import urllib2
 html_2 = urllib2.urlopen(url).read()
 
+
+#%% Make a soup
 from bs4 import BeautifulSoup
+
+# All 3 methods results in the same soup
+soup_1 = BeautifulSoup(html_1)
+soup_2 = BeautifulSoup(html_2)
+soup_3 = BeautifulSoup(urllib2.urlopen(url))
 
