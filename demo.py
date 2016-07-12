@@ -42,8 +42,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 
-br = webdriver.Firefox()
-
+#br = webdriver.Firefox()
+br = webdriver.Chrome( 'chromedriver' )
 # Headless
 #br = webdriver.PhantomJS()
 
