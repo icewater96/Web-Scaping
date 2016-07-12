@@ -28,3 +28,6 @@ soup_1 = BeautifulSoup(html_1)
 soup_2 = BeautifulSoup(html_2)
 soup_3 = BeautifulSoup(urllib2.urlopen(url))
 
+
+#%%% Web Scraping
+all_items = soup_2.find_all( 'span', class = "priceNow" )
